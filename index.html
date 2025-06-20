@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Portfolio Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-indigo-600">AI Portfolio Generator</h1>
+        <nav>
+          <a href="#pricing" class="mr-6 hover:text-indigo-600">Pricing</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="max-w-5xl mx-auto px-4 py-16 text-center">
+      <h2 class="text-4xl font-extrabold mb-4">Generate and Launch Your Personal Portfolio in Minutes</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Upload your résumé, sketches and images—our AI instantly crafts a responsive website that you can preview for free. Pay only when you decide to download the full source code or publish online.
+      </p>
+      <a href="#pricing" class="mt-8 inline-block bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg shadow hover:bg-indigo-700">See Pricing</a>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-10">Simple, Transparent Pricing</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Free -->
+          <div class="border rounded-lg p-8 text-center shadow-sm">
+            <h4 class="text-xl font-semibold mb-2">Free Plan</h4>
+            <p class="text-4xl font-bold mb-4">$0</p>
+            <ul class="text-sm text-gray-600 space-y-2 mb-6">
+              <li>Generate up to 2 portfolios</li>
+              <li>Preview online</li>
+              <li>No credit card required</li>
+            </ul>
+            <span class="inline-block bg-gray-200 text-gray-700 py-2 px-6 rounded-full cursor-not-allowed">Current Plan</span>
+          </div>
+          <!-- Paid -->
+          <div class="border-2 border-indigo-600 rounded-lg p-8 text-center shadow-lg">
+            <h4 class="text-xl font-semibold mb-2">Download Plan</h4>
+            <p class="text-4xl font-bold mb-4">$3.99</p>
+            <ul class="text-sm text-gray-600 space-y-2 mb-6">
+              <li>Unlimited generations</li>
+              <li>Download full source code</li>
+              <li>Deploy with one click</li>
+              <li>Email support</li>
+            </ul>
+            <span class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-6 rounded-full">Pay During Checkout</span>
+          </div>
+        </div>
+        <p class="text-xs text-center text-gray-500 mt-6">Customers are charged immediately at checkout. All payments are processed securely via Stripe.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-5xl mx-auto px-4 py-16">
+      <h3 class="text-3xl font-bold mb-6 text-center">Get in Touch</h3>
+      <p class="text-center text-gray-600 mb-4">Questions about pricing or the product? Send us an email.</p>
+      <p class="text-center"><a href="mailto:support@aiportfolio.dev" class="text-indigo-600 hover:underline">support@aiportfolio.dev</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-4 text-center text-xs text-gray-500">
+      <p>&copy; <span id="year"></span> AI Portfolio Generator. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
